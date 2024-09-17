@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Decortwist</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100;300;500;700;900&family=Poppins:ital,wght@1,500;1,600&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+
+	<Header>
+		<div class="main">
+			<div class="container">
+				<div class="header-star">
+					<div class="container-fluid">
+						<!--div class="nav-toggle">
+					<i class="fa fa-bars"></i>
+				</div-->
+						<div id="mySidenav" class="sidenav" style="width:0;">
+							<div class="header_sidebar">
+								<div class="close_icon"><a href="javascript:void(0)" class="closebtn"
+										onclick="closeNav()">&times;</a></div>
+								<div class="sidebar_decor_logo"><img src="img/logo.png" alt="logo"></div>
+							</div>
+							<nav class="header_box_toggle mobile">
+								<div class="head-down_slide">
+									<div class="head-dropdown_slide">
+										<ul class="menubar_slide">
+											<li class="depart-icon-move_slide"><a href="#"
+													onclick="myFunction(this)">Departments<i class="fa fa-angle-down"
+														aria-hidden="true"></i></a>
+												<div class="dropdown_slide" id="myDIV">
+													<ul>
+														<li><a href="#">Decor</a></li>
+														<li><a href="#">Kitchen & Dining</a></li>
+														<li><a href="#">Storage & Organisation</a></li>
+														<li><a href="#">Furnishing</a></li>
+														<li><a href="#">Pooja Essentials</a></li>
+														<li class="department-bottom-hide"><a href="#">Wall Decor</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li class="depart-icon-move_slide"><a href="">Best Seller</a></li>
+											<li class="depart-icon-move_slide"><a href="#"
+													onclick="myFunction1(this)">Gifting<i class="fa fa-angle-down"
+														aria-hidden="true"></i></a>
+												<div class="dropdown_slide" id="myDIV1">
+													<ul>
+														<li><a href="#">Wedding Gifts</a></li>
+														<li><a href="#">Father's Day Gifts</a></li>
+														<li><a href="#">Birthday Gift</a></li>
+
+													</ul>
+												</div>
+											</li>
+											<li class="depart-icon-move_slide"><a href="#" onclick="myFunction2(this)"
+													class="hover-work-properly">Offers For You<i
+														class="fa fa-angle-down" aria-hidden="true"></i></a>
+												<div class="dropdown_slide" id="myDIV2">
+													<ul>
+														<li><a href="#">Budget </a></li>
+														<li class="department-bottom-hide"><a href="#">Budget Deals</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+						</div>
+						<div class="main-front-no-scroll">
+							<div class="headers">
+								<div class="nav-toggle" onclick="openNav()">
+
+									<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+										class="icon icon-hamburger" fill="none" viewBox="0 0 18 16">
+										<path
+											d="M1 .5a.5.5 0 100 1h15.71a.5.5 0 000-1H1zM.5 8a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1A.5.5 0 01.5 8zm0 7a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1a.5.5 0 01-.5-.5z"
+											fill="currentColor">
+										</path>
+									</svg>
+								</div>
+								<div class="head-logo">
+									<img src="img/logo.png" alt="logo">
+								</div>
+								<div class="head-search desktop">
+									<img src="img/search.png">
+									<input type="search" placeholder="Search">
+								</div>
+								<ul class="head-icon">
+									<li class="men_logo_mobile">
+										<!--img src="img/icon1.png" alt="logo" class="men_logo"-->
+										<svg aria-hidden="true" focusable="false" class="icon icon-account" fill="none"
+											viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M8.73793 14.8948C5.8213 13.4658 4.11905 11.2411 3.95775 7.8911C3.85911 5.84196 4.47896 4.01729 5.77198 2.4977C8.56597 -0.783237 13.3448 -0.83792 16.0841 2.36963C17.7904 4.36841 18.3716 6.72407 17.8157 9.35745C17.2585 12.0024 15.6376 13.7234 13.2408 14.8789C13.8434 15.1005 14.2779 15.243 14.7005 15.42C18.7942 17.1324 21.1936 20.3457 21.9627 24.9966C21.9827 25.1146 22.0254 25.2556 21.9841 25.3506C21.8867 25.578 21.7468 25.7852 21.6241 25.9996C21.4828 25.8197 21.2762 25.6629 21.2149 25.4542C21.0949 25.047 21.0723 24.6081 20.983 24.1879C19.8912 19.0434 15.4696 15.3581 10.6748 15.5898C5.63068 15.8344 1.53434 19.7572 0.80918 25.0383C0.793184 25.1563 0.818512 25.3002 0.765191 25.3909C0.637222 25.6067 0.474595 25.7981 0.325298 25.9996C0.211992 25.7578 -0.019952 25.5031 0.00137618 25.2772C0.299971 22.2639 1.53967 19.7572 3.62183 17.7397C4.86153 16.5381 6.29452 15.692 7.8968 15.1854C8.12074 15.1149 8.34069 15.0315 8.73659 14.8948H8.73793ZM11.0027 14.3076C14.4485 14.3004 17.2199 11.2944 17.2132 7.57308C17.2065 3.87339 14.4006 0.867305 10.9587 0.873061C7.51422 0.880256 4.75622 3.88203 4.76289 7.61913C4.76955 11.3562 7.53022 14.3163 11.0027 14.3076Z"
+												fill="black"></path>
+										</svg>
+									</li>
+									<li class="men_logo_mobile">
+										<!--img src="img/heart-logo.svg" alt="logo" class="heart-logo"-->
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+											class="wlh-svg-Icon wlh-svg-icon-heart-empty wlh-theme-Dawn  "
+											style="width:1em;font-size:22px;; ; ">
+											<path style=""
+												d="M29.728 10.656q0-1.472-0.384-2.56t-0.992-1.76-1.472-1.056-1.664-0.576-1.76-0.128-1.984 0.448-1.984 1.152-1.536 1.28-1.088 1.088q-0.32 0.416-0.864 0.416t-0.864-0.416q-0.448-0.48-1.088-1.088t-1.536-1.28-1.984-1.152-1.984-0.448-1.76 0.128-1.664 0.576-1.472 1.056-0.992 1.76-0.384 2.56q0 2.976 3.36 6.336l10.368 9.984 10.368-9.984q3.36-3.36 3.36-6.336zM32 10.656q0 3.936-4.096 8.032l-11.104 10.72q-0.32 0.32-0.8 0.32t-0.8-0.32l-11.136-10.752q-0.16-0.16-0.48-0.48t-0.992-1.184-1.216-1.728-0.96-2.144-0.416-2.464q0-3.936 2.272-6.144t6.272-2.24q1.088 0 2.24 0.384t2.144 1.056 1.728 1.216 1.344 1.216q0.64-0.64 1.344-1.216t1.728-1.216 2.144-1.056 2.24-0.384q4 0 6.272 2.24t2.272 6.144z">
+											</path>
+										</svg>
+									</li>
+									<li id="cart-icon-bubble">
+										<!--img src="img/troli-logo.svg" alt="logo" class="troli-img"-->
+										<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+												stroke="#121212"></path>
+											<path
+												d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+												stroke="#121212"></path>
+											<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101" stroke="#121212"
+												stroke-linecap="round" stroke-linejoin="round"></path>
+											<path
+												d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+												stroke="#121212" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="mobile-show-dispaly-none-invisible">
+							<div class="mobile-show-display" style="display:none;">
+								<div class="headerss">
+									<div class="nav-toggle" onclick="openNav()">
+
+										<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+											class="icon icon-hamburger" fill="none" viewBox="0 0 18 16">
+											<path
+												d="M1 .5a.5.5 0 100 1h15.71a.5.5 0 000-1H1zM.5 8a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1A.5.5 0 01.5 8zm0 7a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1a.5.5 0 01-.5-.5z"
+												fill="currentColor">
+											</path>
+										</svg>
+									</div>
+									<div class="search-dispaly">
+										<img src="img/search.png">
+										<input type="search" placeholder="Search">
+									</div>
+
+									<ul class="head-iconss">
+
+										<li id="cart-icon-bubble">
+											<!--img src="img/troli-logo.svg" alt="logo" class="troli-img"-->
+											<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+													stroke="#121212"></path>
+												<path
+													d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+													stroke="#121212"></path>
+												<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101"
+													stroke="#121212" stroke-linecap="round" stroke-linejoin="round">
+												</path>
+												<path
+													d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+													stroke="#121212" stroke-linecap="round" stroke-linejoin="round">
+												</path>
+											</svg>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<nav class="header-inline-menu desktop">
+						<div class="head-down">
+							<div class="head-dropdown">
+								<ul class="menubar">
+									<li class="accordion_property"><a href="#"  class="hover-work-properlys"> Departments<i
+												class="fa fa-angle-down" aria-hidden="true"></i></a>
+										<div class="dropdown">
+											<ul class="panel_property">
+												<li><a href="#">Decor</a></li>
+												<li><a href="#">Kitchen & Dining</a></li>
+												<li><a href="#">Storage & Organisation</a></li>
+												<li><a href="#">Furnishing</a></li>
+												<li><a href="#">Pooja Essentials</a></li>
+												<li class="department-bottom-hide"><a href="#">Wall Decor</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="best_seller">Best Seller</li>
+									<li class="accordion_property"><a href="#" class="hover-work-properlys">Gifting<i class="fa fa-angle-down"
+												aria-hidden="true"></i></a>
+										<div class="dropdown">
+											<ul class="panel_property">
+												<li><a href="#">Wedding Gifts</a></li>
+												<li><a href="#">Father's Day Gifts</a></li>
+												<li class="department-bottom-hide"><a href="#">Birthday Gift</a></li>
+
+											</ul>
+										</div>
+									</li>
+									<li class="accordion_property" ><a href="#" class="hover-work-properlys">Offers For You<i class="fa fa-angle-down"
+												aria-hidden="true"></i></a>
+										<div class="dropdown" >
+											<ul class="panel_property">
+												<li><a href="#">Budget Deals</a></li>
+												<li class="department-bottom-hide"><a href="#">Budget Deals</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+					<div class="head-search mobile-invisible">
+						<div class="head-search mobile">
+							<input type="search" placeholder="Search">
+							<img src="img/search.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</Header>
+
+	<div class="slider-banner">
+
+		<div class="star-banner">
+			<div class="banner">
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/slide2.webp" alt="logo"></div>
+						<div class="swiper-slide"><img src="img/sliderimg.webp" alt="logo"></div>
+						<div class="swiper-slide"><img src="img/slide3.webp" alt="logo"></div>
+						<div class="swiper-slide"><img src="img/slide4.webp" alt="logo"></div>
+						<div class="swiper-slide"><img src="img/slide5.webp" alt="logo"></div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+
+			</div>
+			<div class="sale">
+				<img src="img/70percent.webp" alt="logo">
+			</div>
+
+		</div>
+
+	</div>
+	<!-- secontion temptale -->
+
+
+	<div class="section-template-browse">
+		<div class="container">
+			<div class="browser-main-department">
+				<p class="browse-logo_list">Browse By Departments</p>
+				<div class="department-arrows">
+					<button class="arrow-left arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+					<button class="arrow-right arrow"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+				</div>
+			</div>
+			<div class="browse_list_contain">
+				<div class="browse-list-track">
+					<div class="swiper mySwipers">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="browse_list_logo_image">
+									<img src="img/browse1.webp" alt="logo">
+									<div class="browse_list_text">
+										<p>Decor</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="browse_list_logo_image">
+									<img src="img/browse2.webp" alt="logo">
+									<div class="browse_list_text">
+										<p>Furnishing</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="browse_list_logo_image">
+									<img src="img/browse3.webp" alt="logo">
+									<div class="browse_list_text">
+										<p>Kitchen & Dining</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="browse_list_logo_image">
+									<img src="img/browse4.webp" alt="logo">
+									<div class="browse_list_text">
+										<p>Lighting</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="browse_list_logo_image">
+									<img src="img/browse5.webp" alt="logo">
+									<div class="browse_list_text">
+										<p>Storage & Organisation</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="browse_list_logo_image">
+									<img src="img/browse6.webp" alt="logo">
+									<div class="browse_list_text">
+										<p>Garden</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="browse_list_logo_image">
+									<img src="img/browse7.webp" alt="logo">
+									<div class="browse_list_text">
+										<p>pooja Essentials</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="browse_list_logo_image">
+									<img src="img/browse8.webp" alt="logo">
+									<div class="browse_list_text">
+										<p>Furniture</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="browse_list_logo_image">
+									<img src="img/browse9.webp" alt="logo">
+									<div class="browse_list_text">
+										<p>Bath</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="browse_list_logo_image">
+									<img src="img/browse10.webp" alt="logo">
+									<div class="browse_list_text">
+										<p>Fragrance</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="browse_list_logo_image">
+									<img src="img/browse11.webp" alt="logo">
+									<div class="browse_list_text">
+										<p>Wall Decor</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="browse_list_logo_image">
+									<img src="img/browse12.webp" alt="logo">
+									<div class="browse_list_text">
+										<p>Kids</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- star daily deals -->
+	<div class="main-daily-deals">
+		<div class="container">
+			<div class="sub-daily-deals">
+				<div class="daily-deals-heading">
+					<p class="browse-logo_list">Daily Deals</p>
+					<div class="department-arrows">
+					<button class="arrow-lefts arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+					<button class="arrow-rights arrow"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+				</div>
+				</div>
+				<div class="daily_deals">
+					<div class="swiper mySwiperslide">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide daily-deals-img"><img src="img/dealslide1.webp"></div>
+							<div class="swiper-slide daily-deals-img"><img src="img/slider2.webp"></div>
+							<div class="swiper-slide daily-deals-img"><img src="img/dslider3.webp"></div>
+							<div class="swiper-slide daily-deals-img"><img src="img/dslider4.webp"></div>
+							<div class="swiper-slide daily-deals-img"><img src="img/dslider5.webp"></div>
+							<div class="swiper-slide daily-deals-img"><img src="img/dslider6.webp"></div>
+							<div class="swiper-slide daily-deals-img"><img src="img/dslider7.webp"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- end daily deals -->
+
+	<!-- secontion temptale -->
+	<div class="decor-banner">
+		<div class="container">
+			<div class="decor">
+				<div class="decor-heading">
+					<p>Decor Promise</p>
+				</div>
+				<p class="decor-par">Trusted and loved by many decoristas just like you</p>
+			</div>
+		</div>
+	</div>
+	<div class="usp-main">
+		<div class="container">
+			<div class="usp-icon">
+				<div class="usp-icon-data">
+					<img src="img/shipping.svg" alt="contaier-logo">
+					<div class="usp-icon-title">
+						<p>Free</p>
+						<p>Shipping</p>
+					</div>
+				</div>
+				<div class="usp-icon-data quality">
+					<img src="img/quality.svg" alt="contaier-logo">
+					<div class="usp-icon-title">
+						<p>Quality</p>
+						<p>Checked</p>
+					</div>
+				</div>
+				<div class="usp-icon-data days">
+					<img src="img/7days.svg" alt="contaier-logo">
+					<div class="usp-icon-title">
+						<p>Easy 7</p>
+						<p>days return</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- secontion temptale -->
+	<div class="section-template">
+		<div class="container">
+			<p class="heading-logo_list">Offers for you</p>
+			<div class="logo_list_contain">
+				<div class="list-track">
+					<div class="list_logo_image">
+						<img src="img/offers.webp" alt="logo">
+					</div>
+					<div class="list_logo_image">
+						<img src="img/offer2.webp" alt="logo">
+					</div>
+					<div class="list_logo_image">
+						<img src="img/offer3.webp" alt="logo">
+					</div>
+					<div class="list_logo_image">
+						<img src="img/offer4.webp" alt="logo">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- secontion temptale -->
+	<div class="categories">
+		<div class="container">
+			<div class="categories_list">
+				<div class="categories_heading">
+					<p> Categories </p>
+					<!--img src="img/arrow_up_down.svg" alt="logo"-->
+					<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+						<g clip-path="url(#clip0_1_685)">
+							<path
+								d="M5.0155 6.20998L3.031 8.60498V1.13098C3.031 1.08125 3.01125 1.03356 2.97608 0.998399C2.94092 0.963236 2.89323 0.943481 2.8435 0.943481C2.79377 0.943481 2.74608 0.963236 2.71092 0.998399C2.67575 1.03356 2.656 1.08125 2.656 1.13098V8.59448L0.671499 6.20973C0.655757 6.19079 0.636438 6.17513 0.614645 6.16365C0.592852 6.15218 0.569011 6.14511 0.544485 6.14284C0.519959 6.14058 0.495227 6.14317 0.471701 6.15046C0.448176 6.15776 0.426318 6.16961 0.407374 6.18536C0.388431 6.2011 0.372774 6.22042 0.361297 6.24221C0.34982 6.264 0.342748 6.28784 0.340485 6.31237C0.338221 6.3369 0.340811 6.36163 0.348106 6.38515C0.3554 6.40868 0.367257 6.43054 0.382999 6.44948L2.70425 9.23873C2.72184 9.25993 2.74389 9.27699 2.76882 9.2887C2.79375 9.3004 2.82095 9.30648 2.8485 9.30648H2.84875C2.9045 9.30648 2.95725 9.28148 2.993 9.23873L5.3045 6.44948C5.33626 6.41116 5.35149 6.36179 5.34685 6.31223C5.34221 6.26267 5.31807 6.21699 5.27975 6.18523C5.24143 6.15347 5.19205 6.13824 5.1425 6.14288C5.09294 6.14752 5.04726 6.17166 5.0155 6.20998ZM9.61675 3.55048L7.29575 0.761231C7.27816 0.740095 7.25615 0.723074 7.23127 0.711368C7.20639 0.699662 7.17925 0.693557 7.15175 0.693481C7.096 0.693481 7.04275 0.718481 7.0075 0.761231L4.69575 3.55048C4.66446 3.58882 4.6496 3.63797 4.65441 3.68723C4.65921 3.73648 4.68329 3.78183 4.72139 3.81341C4.7595 3.84498 4.80854 3.86021 4.85782 3.85577C4.90711 3.85134 4.95264 3.8276 4.9845 3.78973L6.969 1.39498V8.86898C6.969 8.91871 6.98875 8.9664 7.02392 9.00156C7.05908 9.03673 7.10677 9.05648 7.1565 9.05648C7.20623 9.05648 7.25392 9.03673 7.28908 9.00156C7.32424 8.9664 7.344 8.91871 7.344 8.86898V1.40523L9.3285 3.78998C9.34413 3.80903 9.36338 3.82478 9.38513 3.83634C9.40689 3.84789 9.43073 3.85502 9.45526 3.85729C9.47979 3.85957 9.50453 3.85696 9.52804 3.84961C9.55156 3.84226 9.57338 3.83032 9.59225 3.81448C9.6305 3.78272 9.65457 3.73706 9.65917 3.68755C9.66376 3.63805 9.6485 3.58874 9.61675 3.55048Z"
+								fill="black"></path>
+						</g>
+						<defs>
+							<clipPath id="clip0_1_685">
+								<rect width="10" height="10" fill="white"></rect>
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- start categories -->
+	<div class="categories_details">
+		<div class="container">
+			<div class="categories_details_data">
+				<div class="categories_data_details">
+					<div class="categories_data_img">
+						<div class="heart_logo_img"><!--img src="img/like-logo.png" alt="logo" -->
+							<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart"
+								class="svg-inline--fa fa-heart fa-w-16 fa-1x " role="img"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#fff">
+								<path fill="currentColor"
+									d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
+								</path>
+							</svg>
+
+
+						</div>
+						<div class="categories_image_on"><img src="img/img_categories.webp" alt="logo"></div>
+						<div class="troli_logo_img"><!--img src="img/troli.svg" alt="logo"-->
+							<div class="card_product_custom_add">
+								<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+										stroke="#121212"></path>
+									<path
+										d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+										stroke="#121212"></path>
+									<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101" stroke="#121212"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+										stroke="#121212" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="categories_data_contain">
+							<p class="metal_planter">
+								Metal Planter with Stand Flower Pot for Living Room Bedroom Indoor Outdoor Pots for
+								Plants Home Office Decor Garden Interior Balcony Decoration Set of 2
+							</p>
+							<p class="categorie_amount">₹899 <span class="discount_offer"> ₹2,322</span> <span
+									class="off"> (61% Off)</span></p>
+						</div>
+					</div>
+					<div class="categories_data_img">
+						<div class="heart_logo_img"><!--img src="img/like-logo.png" alt="logo" -->
+							<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart"
+								class="svg-inline--fa fa-heart fa-w-16 fa-1x " role="img"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#fff">
+								<path fill="currentColor"
+									d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
+								</path>
+							</svg>
+						</div>
+						<div class="categories_image_on"><img src="img/img_categories.webp" alt="logo"></div>
+						<div class="troli_logo_img">
+							<div class="card_product_custom_add">
+								<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+										stroke="#121212"></path>
+									<path
+										d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+										stroke="#121212"></path>
+									<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101" stroke="#121212"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+										stroke="#121212" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="categories_data_contain">
+							<p class="metal_planter">
+								Metal Planter with Stand Flower Pot for Living Room Bedroom Indoor Outdoor Pots for
+								Plants Home Office Decor Garden Interior Balcony Decoration Set of 2
+							</p>
+							<p class="categorie_amount">₹899 <span class="discount_offer"> ₹2,322</span> <span
+									class="off"> (61% Off)</span></p>
+						</div>
+					</div>
+					<div class="categories_data_img">
+						<div class="heart_logo_img"><svg aria-hidden="true" focusable="false" data-prefix="far"
+								data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 fa-1x " role="img"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#fff">
+								<path fill="currentColor"
+									d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
+								</path>
+							</svg></div>
+						<div class="categories_image_on"><img src="img/seller.webp" alt="logo"></div>
+						<div class="troli_logo_img">
+							<div class="card_product_custom_add">
+								<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+										stroke="#121212"></path>
+									<path
+										d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+										stroke="#121212"></path>
+									<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101" stroke="#121212"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+										stroke="#121212" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="categories_data_contain">
+							<p class="metal_planter">Bird Print Metal Planter with Stand Flower Pot for Living Room
+								Bedroom Indoor Outdoor Pots for Plants Home Office Decor Garden Interior Balcony
+								Decoration</p>
+							<p class="categorie_amount">₹469 <span class="discount_offer"> ₹1,172</span> <span
+									class="off"> (60% Off)</span></p>
+						</div>
+					</div>
+					<div class="categories_data_img">
+						<div class="heart_logo_img"><svg aria-hidden="true" focusable="false" data-prefix="far"
+								data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 fa-1x " role="img"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#fff">
+								<path fill="currentColor"
+									d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
+								</path>
+							</svg></div>
+						<div class="categories_image_on"><img src="img/cat6.webp" alt="logo"></div>
+						<div class="troli_logo_img">
+							<div class="card_product_custom_add">
+								<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+										stroke="#121212"></path>
+									<path
+										d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+										stroke="#121212"></path>
+									<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101" stroke="#121212"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+										stroke="#121212" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="categories_data_contain">
+							<p class="metal_planter">Elephant print Metal Planter with Stand Flower Pot for Living Room
+								Bedroom Indoor Outdoor Pots for Plants Home Office Decor Garden Interior Balcony
+								Decoration</p>
+							<p class="categorie_amount">₹469 <span class="discount_offer"> ₹1,172</span> <span
+									class="off"> (61% Off)</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- end categories -->
+
+	<!-- 2 start categories -->
+	<div class="categories_details">
+		<div class="container">
+			<div class="categories_details_data">
+				<div class="categories_data_details">
+					<div class="categories_data_img">
+						<div class="heart_logo_img"><svg aria-hidden="true" focusable="false" data-prefix="far"
+								data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 fa-1x " role="img"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#fff">
+								<path fill="currentColor"
+									d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
+								</path>
+							</svg></div>
+						<div class="categories_image_on"><img src="img/cat3.webp" alt="logo"></div>
+						<div class="troli_logo_img">
+							<div class="card_product_custom_add">
+								<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+										stroke="#121212"></path>
+									<path
+										d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+										stroke="#121212"></path>
+									<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101" stroke="#121212"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+										stroke="#121212" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="categories_data_contain">
+							<p class="metal_planter">Cute Turtle print Metal Planter with Stand Flower Pot for Living
+								Room Bedroom Indoor Outdoor Pots for Plants Home Office Decor Garden Interior Balcony
+								Decoration</p>
+							<p class="categorie_amount">₹469 <span class="discount_offer"> ₹1,172</span> <span
+									class="off"> (61% Off)</span></p>
+						</div>
+					</div>
+					<div class="categories_data_img">
+						<div class="heart_logo_img"><svg aria-hidden="true" focusable="false" data-prefix="far"
+								data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 fa-1x " role="img"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#fff">
+								<path fill="currentColor"
+									d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
+								</path>
+							</svg></div>
+						<div class="categories_image_on"><img src="img/cat4.webp" alt="logo"></div>
+						<div class="troli_logo_img">
+							<div class="card_product_custom_add">
+								<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+										stroke="#121212"></path>
+									<path
+										d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+										stroke="#121212"></path>
+									<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101" stroke="#121212"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+										stroke="#121212" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="categories_data_contain">
+							<p class="metal_planter">
+								Paisely Metal Planter with Stand Flower Pot for Living Room Bedroom Indoor Outdoor Pots
+								for Plants Home Office Decor Garden Interior Balcony Decoration
+							</p>
+							<p class="categorie_amount">₹469 <span class="discount_offer"> ₹1,172</span> <span
+									class="off"> (60% Off)</span></p>
+						</div>
+					</div>
+					<div class="categories_data_img">
+						<div class="heart_logo_img"><svg aria-hidden="true" focusable="false" data-prefix="far"
+								data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 fa-1x " role="img"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#fff">
+								<path fill="currentColor"
+									d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
+								</path>
+							</svg></div>
+						<div class="categories_image_on"><img src="img/cat5.webp" alt="logo"></div>
+						<div class="troli_logo_img">
+							<div class="card_product_custom_add">
+								<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+										stroke="#121212"></path>
+									<path
+										d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+										stroke="#121212"></path>
+									<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101" stroke="#121212"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+										stroke="#121212" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="categories_data_contain">
+							<p class="metal_planter">
+								We may fight, but we always make it right Printed Cushion Gift for Birthday, Kids Room,
+								Living Room, or Bedroom Throw Pillow
+							</p>
+							<p class="categorie_amount">₹299 <span class="discount_offer"> ₹599</span> <span
+									class="off"> (50% Off)</span></p>
+						</div>
+					</div>
+					<div class="categories_data_img">
+						<div class="heart_logo_img"><svg aria-hidden="true" focusable="false" data-prefix="far"
+								data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 fa-1x " role="img"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#fff">
+								<path fill="currentColor"
+									d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
+								</path>
+							</svg></div>
+						<div class="categories_image_on"><img src="img/cat5.webp" alt="logo"></div>
+						<div class="troli_logo_img">
+							<div class="card_product_custom_add">
+								<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+										stroke="#121212"></path>
+									<path
+										d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+										stroke="#121212"></path>
+									<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101" stroke="#121212"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+										stroke="#121212" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="categories_data_contain">
+							<p class="metal_planter">
+								Shared childhood endless memories Printed Cushion Gift for Birthday, Kids Room, Living
+								Room, or Bedroom Throw Pillow
+							</p>
+							<p class="categorie_amount">₹299 <span class="discount_offer"> ₹599</span> <span
+									class="off"> (50% Off)</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 2 end categories -->
+
+	<!-- 3 start categories -->
+	<div class="categories_details">
+		<div class="container">
+			<div class="categories_details_data">
+				<div class="categories_data_details">
+					<div class="categories_data_img">
+						<div class="heart_logo_img"><svg aria-hidden="true" focusable="false" data-prefix="far"
+								data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 fa-1x " role="img"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#fff">
+								<path fill="currentColor"
+									d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
+								</path>
+							</svg></div>
+						<div class="categories_image_on"><img src="img/cat9.webp" alt="logo"></div>
+						<div class="troli_logo_img">
+							<div class="card_product_custom_add">
+								<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+										stroke="#121212"></path>
+									<path
+										d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+										stroke="#121212"></path>
+									<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101" stroke="#121212"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+										stroke="#121212" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="categories_data_contain">
+							<p class="metal_planter">Cute Turtle print Metal Planter with Stand Flower Pot for Living
+								Room Bedroom Indoor Outdoor Pots for Plants Home Office Decor Garden Interior Balcony
+								Decoration</p>
+							<p class="categorie_amount">₹469 <span class="discount_offer"> ₹1,172</span> <span
+									class="off"> (61% Off)</span></p>
+						</div>
+					</div>
+					<div class="categories_data_img">
+						<div class="heart_logo_img"><svg aria-hidden="true" focusable="false" data-prefix="far"
+								data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 fa-1x " role="img"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#fff">
+								<path fill="currentColor"
+									d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
+								</path>
+							</svg></div>
+						<div class="categories_image_on"><img src="img/cat10.webp" alt="logo"></div>
+						<div class="troli_logo_img">
+							<div class="card_product_custom_add">
+								<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+										stroke="#121212"></path>
+									<path
+										d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+										stroke="#121212"></path>
+									<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101" stroke="#121212"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+										stroke="#121212" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="categories_data_contain">
+							<p class="metal_planter">
+								Paisely Metal Planter with Stand Flower Pot for Living Room Bedroom Indoor Outdoor Pots
+								for Plants Home Office Decor Garden Interior Balcony Decoration
+							</p>
+							<p class="categorie_amount">₹469 <span class="discount_offer"> ₹1,172</span> <span
+									class="off"> (60% Off)</span></p>
+						</div>
+					</div>
+					<div class="categories_data_img">
+						<div class="heart_logo_img"><svg aria-hidden="true" focusable="false" data-prefix="far"
+								data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 fa-1x " role="img"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#fff">
+								<path fill="currentColor"
+									d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
+								</path>
+							</svg></div>
+						<div class="categories_image_on"><img src="img/cat11.webp" alt="logo"></div>
+						<div class="troli_logo_img">
+							<div class="card_product_custom_add">
+								<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+										stroke="#121212"></path>
+									<path
+										d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+										stroke="#121212"></path>
+									<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101" stroke="#121212"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+										stroke="#121212" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="categories_data_contain">
+							<p class="metal_planter">
+								We may fight, but we always make it right Printed Cushion Gift for Birthday, Kids Room,
+								Living Room, or Bedroom Throw Pillow
+							</p>
+							<p class="categorie_amount">₹299 <span class="discount_offer"> ₹599</span> <span
+									class="off"> (50% Off)</span></p>
+						</div>
+					</div>
+					<div class="categories_data_img">
+						<div class="heart_logo_img"><svg aria-hidden="true" focusable="false" data-prefix="far"
+								data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 fa-1x " role="img"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#fff">
+								<path fill="currentColor"
+									d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
+								</path>
+							</svg></div>
+						<div class="categories_image_on"><img src="img/cat12.webp" alt="logo"></div>
+						<div class="troli_logo_img">
+							<div class="card_product_custom_add">
+								<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+										stroke="#121212"></path>
+									<path
+										d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+										stroke="#121212"></path>
+									<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101" stroke="#121212"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+										stroke="#121212" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="categories_data_contain">
+							<p class="metal_planter">
+								Shared childhood endless memories Printed Cushion Gift for Birthday, Kids Room, Living
+								Room, or Bedroom Throw Pillow
+							</p>
+							<p class="categorie_amount">₹299 <span class="discount_offer"> ₹599</span> <span
+									class="off"> (50% Off)</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 3 end categories -->
+
+
+	<!-- 4 start categories -->
+	<div class="categories_details">
+		<div class="container">
+			<div class="categories_details_data">
+				<div class="categories_data_details">
+					<div class="categories_data_img">
+						<div class="heart_logo_img"><svg aria-hidden="true" focusable="false" data-prefix="far"
+								data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 fa-1x " role="img"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#fff">
+								<path fill="currentColor"
+									d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
+								</path>
+							</svg></div>
+						<div class="categories_image_on"><img src="img/godimg.webp" alt="logo"></div>
+						<div class="troli_logo_img">
+							<div class="card_product_custom_add">
+								<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+										stroke="#121212"></path>
+									<path
+										d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+										stroke="#121212"></path>
+									<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101" stroke="#121212"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+										stroke="#121212" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="categories_data_contain">
+							<p class="metal_planter">Jharokha Wall Hanging</p>
+							<p class="categorie_amount">₹3,040 <span class="discount_offer"> ₹10,000</span> <span
+									class="off"> (70% Off)</span></p>
+						</div>
+					</div>
+					<div class="categories_data_img">
+						<div class="heart_logo_img"><svg aria-hidden="true" focusable="false" data-prefix="far"
+								data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 fa-1x " role="img"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#fff">
+								<path fill="currentColor"
+									d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
+								</path>
+							</svg></div>
+						<div class="categories_image_on"><img src="img/cat42.webp" alt="logo"></div>
+						<div class="troli_logo_img">
+							<div class="card_product_custom_add">
+								<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+										stroke="#121212"></path>
+									<path
+										d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+										stroke="#121212"></path>
+									<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101" stroke="#121212"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+										stroke="#121212" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="categories_data_contain">
+							<p class="metal_planter">Hand Painted 3 Drawer </p>
+							<p class="categorie_amount">₹1,123 <span class="discount_offer"> ₹3,250</span> <span
+									class="off"> (65% Off)</span></p>
+						</div>
+					</div>
+					<div class="categories_data_img">
+						<div class="heart_logo_img"><svg aria-hidden="true" focusable="false" data-prefix="far"
+								data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 fa-1x " role="img"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#fff">
+								<path fill="currentColor"
+									d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
+								</path>
+							</svg></div>
+						<div class="categories_image_on"><img src="img/cat43.webp" alt="logo"></div>
+						<div class="troli_logo_img">
+							<div class="card_product_custom_add">
+								<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+										stroke="#121212"></path>
+									<path
+										d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+										stroke="#121212"></path>
+									<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101" stroke="#121212"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+										stroke="#121212" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="categories_data_contain">
+							<p class="metal_planter">Hand Painted Drawer</p>
+							<p class="categorie_amount">₹469 <span class="discount_offer"> ₹1,172</span> <span
+									class="off"> (60% Off)</span></p>
+						</div>
+					</div>
+					<div class="categories_data_img">
+						<div class="heart_logo_img"><svg aria-hidden="true" focusable="false" data-prefix="far"
+								data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 fa-1x " role="img"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#fff">
+								<path fill="currentColor"
+									d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
+								</path>
+							</svg></div>
+						<div class="categories_image_on"><img src="img/cat44.webp" alt="logo"></div>
+						<div class="troli_logo_img">
+							<div class="card_product_custom_add">
+								<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+										stroke="#121212"></path>
+									<path
+										d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+										stroke="#121212"></path>
+									<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101" stroke="#121212"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+										stroke="#121212" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="categories_data_contain">
+							<p class="metal_planter">Round Puja Chowki Bajot</p>
+							<p class="categorie_amount">₹1,194<span class="discount_offer"> ₹4,500</span> <span
+									class="off"> (73% Off)</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 4 end categories -->
+	<!-- 5 start categories -->
+	<div class="categories_details">
+		<div class="container">
+			<div class="categories_details_data">
+				<div class="categories_data_details">
+					<div class="categories_data_img">
+						<div class="heart_logo_img"><svg aria-hidden="true" focusable="false" data-prefix="far"
+								data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 fa-1x " role="img"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#fff">
+								<path fill="currentColor"
+									d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
+								</path>
+							</svg></div>
+						<div class="categories_image_on"><img src="img/cat51.webp" alt="logo"></div>
+						<div class="troli_logo_img">
+							<div class="card_product_custom_add">
+								<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+										stroke="#121212"></path>
+									<path
+										d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+										stroke="#121212"></path>
+									<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101" stroke="#121212"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+										stroke="#121212" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="categories_data_contain">
+							<p class="metal_planter">Wooden Hathi Brass Stool</p>
+							<p class="categorie_amount">₹2,117 <span class="discount_offer"> ₹3,500</span> <span
+									class="off"> (40% Off)</span></p>
+						</div>
+					</div>
+					<div class="categories_data_img">
+						<div class="heart_logo_img"><svg aria-hidden="true" focusable="false" data-prefix="far"
+								data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 fa-1x " role="img"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#fff">
+								<path fill="currentColor"
+									d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
+								</path>
+							</svg></div>
+						<div class="categories_image_on"><img src="img/cat52.webp" alt="logo"></div>
+						<div class="troli_logo_img">
+							<div class="card_product_custom_add">
+								<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+										stroke="#121212"></path>
+									<path
+										d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+										stroke="#121212"></path>
+									<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101" stroke="#121212"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+										stroke="#121212" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="categories_data_contain">
+							<p class="metal_planter">Jharokha Wall Hanging </p>
+							<p class="categorie_amount">₹899 <span class="discount_offer"> ₹1,000</span> <span
+									class="off"> (91% Off)</span></p>
+						</div>
+					</div>
+					<div class="categories_data_img">
+						<div class="heart_logo_img"><svg aria-hidden="true" focusable="false" data-prefix="far"
+								data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 fa-1x " role="img"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#fff">
+								<path fill="currentColor"
+									d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
+								</path>
+							</svg></div>
+						<div class="categories_image_on"><img src="img/cat53.webp" alt="logo"></div>
+						<div class="troli_logo_img">
+							<div class="card_product_custom_add">
+								<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+										stroke="#121212"></path>
+									<path
+										d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+										stroke="#121212"></path>
+									<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101" stroke="#121212"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+										stroke="#121212" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="categories_data_contain">
+							<p class="metal_planter">Multi Organiser Pista Green</p>
+							<p class="categorie_amount">₹2,250 <span class="discount_offer"> ₹2,700</span> <span
+									class="off"> (17% Off)</span></p>
+						</div>
+					</div>
+					<div class="categories_data_img">
+						<div class="heart_logo_img"><svg aria-hidden="true" focusable="false" data-prefix="far"
+								data-icon="heart" class="svg-inline--fa fa-heart fa-w-16 fa-1x " role="img"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" color="#fff">
+								<path fill="currentColor"
+									d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
+								</path>
+							</svg></div>
+						<div class="categories_image_on"><img src="img/cat54.webp" alt="logo"></div>
+						<div class="troli_logo_img">
+							<div class="card_product_custom_add">
+								<svg width="20" height="20" viewBox="0 0 28 25" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11.4185 24.0411C12.6956 24.0411 13.731 23.0897 13.731 21.9161C13.731 20.7425 12.6956 19.7911 11.4185 19.7911C10.1413 19.7911 9.10596 20.7425 9.10596 21.9161C9.10596 23.0897 10.1413 24.0411 11.4185 24.0411Z"
+										stroke="#121212"></path>
+									<path
+										d="M22.2101 24.0411C23.4872 24.0411 24.5226 23.0897 24.5226 21.9161C24.5226 20.7425 23.4872 19.7911 22.2101 19.7911C20.9329 19.7911 19.8976 20.7425 19.8976 21.9161C19.8976 23.0897 20.9329 24.0411 22.2101 24.0411Z"
+										stroke="#121212"></path>
+									<path d="M1.39758 0.666138H4.48092L9.88292 16.2495H22.2101" stroke="#121212"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path
+										d="M8.6804 12.7078L5.71423 4.20776H24.9959C25.1181 4.20762 25.2386 4.23419 25.3474 4.28526C25.4562 4.33633 25.5503 4.41045 25.6218 4.5015C25.6933 4.59255 25.7403 4.69793 25.7588 4.80893C25.7773 4.91994 25.7668 5.03339 25.7281 5.13993L23.1582 12.2233C23.1071 12.3643 23.009 12.4869 22.8779 12.5739C22.7467 12.6608 22.5892 12.7077 22.4274 12.7078H8.6804Z"
+										stroke="#121212" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="categories_data_contain">
+							<p class="metal_planter">Multi Organiser Yellow</p>
+							<p class="categorie_amount">₹2,250<span class="discount_offer"> ₹2,700</span> <span
+									class="off"> (17% Off)</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 5 end categories -->
+
+	<footer>
+		<div class="footer-star-up">
+			<div class="container">
+				<div class="footer-section">
+					<div class="footer">
+						<img src="img/logo.png" alt="footer" class="footerimg">
+						<div class="social_media_icon desktop">
+							<div class="fb">
+								<div class="facebook"><img src="img/facebook.png"></div>
+							</div>
+							<div class="fb">
+								<div class="instagram"><img src="img/instagram.png"></div>
+							</div>
+							<div class="fb">
+								<div class="youtube"><img src="img/youtube.png"></div>
+							</div>
+						</div>
+					</div>
+					<div class="footers-ull">
+						<div class="footer-ul1">
+							<ul>
+								<li class="accordion"><b>DECORTWIST</b><i class="fa fa-chevron-down" ></i></li>
+								<li class="panel">
+									<ul>
+										<li>About us</li>
+										<li>Sell with Us</li>
+										<li>Influencer Program</li>
+										<li>Bulk Order Enquiry</li>
+										<li>Investor Relations</li>
+										<li>Contact Us</li>
+										<li>Wholesale</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-ul2">
+							<ul>
+								<li class="accordion"><b>BROWSE PRODUCTS BY</b><i class="fa fa-chevron-down"></i></li>
+								<li class="panel">
+									<ul>
+										<li>Gift Items</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-ul3">
+							<ul>
+								<li class="accordion"><b>QUICK LINK</b><i class="fa fa-chevron-down"></i></li>
+								<li class="panel">
+									<ul>
+										<li>Diya</li>
+										<li>Urli</li>
+										<li>Planters</li>
+										<li>Vases</li>
+										<li>Lanterns</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-ul4">
+							<ul>
+								<li class="accordion"><b>CUSTOMER SERVICES</b><i class="fa fa-chevron-down"></i></li>
+								<li class="panel">
+									<ul>
+										<li>Track Order</li>
+										<li>Exchange/Cancel My Order</li>
+										<li>Shipping Policy</li>
+										<li>Return & Refund Policy</li>
+										<li>Terms and Conditions</li>
+										<li>Privacy Policy</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-ul5">
+							<ul>
+								<li class="accordion"><b>CONTACT US</b><i class="fa fa-chevron-down"></i></li>
+								<li class="panel">
+									<ul>
+										<li>
+											<p>LGF, 71, Block B, Sector 65, Noida, Gautam Buddha Nagar,UP Pin Code -
+												201301 Monday to Saturday 10:30 am to 6.30 pm.</p>
+										</li>
+										<li>Phone No: +91 9599094029</li>
+										<li>Email : contact@decortwist.com</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="social_media_icon mobile">
+						<div class="fb">
+							<div class="facebook"><img src="img/facebook.png"></div>
+						</div>
+						<div class="fb">
+							<div class="instagram"><img src="img/instagram.png"></div>
+						</div>
+						<div class="fb">
+							<div class="youtube"><img src="img/youtube.png"></div>
+						</div>
+					</div>
+					<div class="social_media_bottom">
+						<p>© 2024 DecorTwist. Marketed By Get Me Rank</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-star">
+			<div class="container">
+				<div class="exfooter">
+					<div class="exfooter-heading">
+						<b class="accordion"> Popular searches<i class="fa fa-chevron-down"></i></b>
+						<div class="panel">
+							<p>Dried Flowers | Candle | Cushion Cover | Table Clock | Silicone Lamp | Table Lamp | Vases
+								| Decor Quotes | Decor Accent | Wall Hook | Globe | Photo Frames | Lantern | Storage
+								Boxes | House Numbers | Tables | Wall Plates | Wall Hanging Frames | Wall Mirror |
+								Canvas Wall Art | Metal Wall Art | Wall Frames |</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const accordionItems = document.querySelectorAll('.accordion_property');
+
+    accordionItems.forEach(item => {
+        item.addEventListener('click', function(event) {
+            event.preventDefault();
+          
+            const dropdown = item.querySelector('.dropdown');
+            const icon = item.querySelector('.hover-work-properlys .fa');
+
+            if (dropdown.classList.contains('active')) {
+                dropdown.classList.remove('active');
+                icon.classList.remove('fa-angle-up');
+                icon.classList.add('fa-angle-down');
+            } else {
+                document.querySelectorAll('.dropdown').forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+                document.querySelectorAll('.fa').forEach(icon => {
+                    icon.classList.remove('fa-angle-up');
+                    icon.classList.add('fa-angle-down');
+                });
+                dropdown.classList.add('active');
+                icon.classList.remove('fa-angle-down');
+                icon.classList.add('fa-angle-up');
+            }
+        });
+    });
+    window.addEventListener('scroll', function() {
+        closeAllDropdowns();
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('.accordion_property')) {
+            closeAllDropdowns();
+        }
+    });
+    function closeAllDropdowns() {
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+            dropdown.classList.remove('active');
+        });
+        document.querySelectorAll('.menubar .fa').forEach(icon => {
+            icon.classList.remove('fa-angle-up');
+            icon.classList.add('fa-angle-down');
+        });
+    }
+});
+</script>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "100%";
+			document.body.style.overflow = "hidden";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0%";
+			document.body.style.overflow = "auto";
+		}
+		document.addEventListener("DOMContentLoaded", function () {
+			closeNav();
+		});
+	</script>
+	<script>
+		function myFunction(element) {
+			var x = document.getElementById("myDIV");
+			var arrow = element.querySelector(".fa");
+
+			if (x.style.display === "block") {
+				x.style.display = "none";
+				arrow.classList.remove("fa-angle-up");
+				arrow.classList.add("fa-angle-down");
+			} else {
+				x.style.display = "block";
+				arrow.classList.remove("fa-angle-down");
+				arrow.classList.add("fa-angle-up");
+			}
+		}
+
+		function myFunction1(element) {
+			var x = document.getElementById("myDIV1");
+			var arrow = element.querySelector(".fa");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+				arrow.classList.remove("fa-angle-up");
+				arrow.classList.add("fa-angle-down");
+			} else {
+				x.style.display = "block";
+				arrow.classList.remove("fa-angle-down");
+				arrow.classList.add("fa-angle-up");
+			}
+		}
+
+			function myFunction2(element) {
+			var x = document.getElementById("myDIV2");
+			var arrow = element.querySelector(".fa");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+				arrow.classList.remove("fa-angle-up");
+				arrow.classList.add("fa-angle-down");
+			} else {
+				x.style.display = "block";
+				arrow.classList.remove("fa-angle-down");
+				arrow.classList.add("fa-angle-up");
+			}
+		}
+ 
+
+    </script>
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script>
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			loop: true,
+			pagination: {
+				el: ".swiper-pagination",
+			},
+			 autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+		});
+	</script>
+	<script>
+		var swiper = new Swiper(".mySwipers", {
+			slidesPerView: 5,
+			spaceBetween: 20,
+			navigation: {
+				nextEl: ".arrow-right",
+				prevEl: ".arrow-left",
+			},
+			breakpoints: {
+				320: {
+					slidesPerView: 2.45,
+					spaceBetween: 8
+				},
+				425: {
+					slidesPerView: 3.30,
+					spaceBetween: 8
+				},
+				640: {
+					slidesPerView: 4.20,
+					spaceBetween: 15
+				},
+				767: {
+					slidesPerView: 5,
+					spaceBetween: 20
+				}
+			}
+		});
+	</script>
+	<script>
+		var swiper = new Swiper(".mySwiperslide", {
+			slidesPerView: 2.17,
+			spaceBetween: 18,
+			freeMode: true,
+			navigation: {
+				nextEl: ".arrow-rights",
+				prevEl: ".arrow-lefts",
+			},
+			breakpoints: {
+				320: {
+					slidesPerView: 1.15,
+					spaceBetween: 8
+				},
+				425: {
+					slidesPerView: 1.50,
+					spaceBetween: 11
+				},
+				640: {
+					slidesPerView: 2.06,
+					spaceBetween: 13
+				},
+				767: {
+					slidesPerView: 2.17,
+					spaceBetween: 18
+				}
+			},
+
+		});
+	</script>
+
+	<script>
+		document.addEventListener('scroll', function () {
+			const element1 = document.querySelector('.main-front-no-scroll');
+			const element2 = document.querySelector('.mobile-show-display');
+			const element3 = document.querySelector('.head-search.mobile');
+			const element4 = document.querySelector('.slider-banner');
+
+			const scrollThreshold = 50;
+			if (screen.width < 767) {
+
+
+
+				if (window.scrollY > scrollThreshold) {
+					element1.style.display = 'none';
+					element2.style.display = 'block';
+					element3.style.display = 'none';
+
+				} else {
+					element1.style.display = 'block';
+					element2.style.display = 'none';
+					element3.style.display = 'block';
+
+				}
+			}
+		});
+
+	</script>
+
+</body>
+
+</html>
